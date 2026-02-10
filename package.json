@@ -6,7 +6,7 @@
   "publisher": "Miantic Development Team",
   "icon": "icon.png",
   "engines": {
-    "vscode": "^1.109.0"
+    "vscode": "^1.90.0"
   },
   "categories": [
     "Snippets"
@@ -15,22 +15,6 @@
     "snippets": [
       {
         "language": "python",
-        "path": "./snippets/snippets.json"
-      },
-      {
-        "language": "javascript",
-        "path": "./snippets/snippets.json"
-      },
-      {
-        "language": "typescript",
-        "path": "./snippets/snippets.json"
-      },
-      {
-        "language": "javascriptreact",
-        "path": "./snippets/snippets.json"
-      },
-      {
-        "language": "typescriptreact",
         "path": "./snippets/snippets.json"
       }
     ]
