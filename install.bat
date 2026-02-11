@@ -1,5 +1,5 @@
 @echo off
-echo Installing Team Snippets Extension...
+echo Installing Driver Snippets Extension...
 echo.
 
 REM Check if Git is installed
@@ -19,7 +19,7 @@ if not exist "%USERPROFILE%\.vscode\extensions" (
 REM Navigate to extensions folder
 cd /d "%USERPROFILE%\.vscode\extensions"
 
-REM Clone the repository
+REM Clone the repository - FIXED: changed team-snippets to driver-snippets
 echo Cloning from GitHub...
 git clone https://github.com/gulshanMiantic08/driver-snippets.git
 
