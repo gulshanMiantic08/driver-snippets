@@ -19,14 +19,21 @@ if not exist "%USERPROFILE%\.vscode\extensions" (
 REM Navigate to extensions folder
 cd /d "%USERPROFILE%\.vscode\extensions"
 
-REM Delete old driver-snippets folder if it exists
+REM ===== NEW CODE: Remove existing folder if it exists =====
 if exist "driver-snippets" (
     echo Removing existing driver-snippets folder...
     rmdir /s /q "driver-snippets"
+    if %errorlevel% neq 0 (
+        echo Failed to remove existing folder!
+        echo Please close VS Code and try again.
+        pause
+        exit /b 1
+    )
 )
+REM ========================================================
 
 REM Clone the repository
-echo Cloning from GitHub...
+echo Cloning latest version from GitHub...
 git clone https://github.com/gulshanMiantic08/driver-snippets.git
 
 if %errorlevel% neq 0 (

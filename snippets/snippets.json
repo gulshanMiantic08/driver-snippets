@@ -1,7 +1,7 @@
 {
     
     "Python Driver Template": {
-        "prefix": "driver.py",
+        "prefix": "drivertemplate",
         "body": [
             "from datetime import datetime as dat",
             "from os.path import exists",
