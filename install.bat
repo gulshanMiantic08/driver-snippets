@@ -19,7 +19,13 @@ if not exist "%USERPROFILE%\.vscode\extensions" (
 REM Navigate to extensions folder
 cd /d "%USERPROFILE%\.vscode\extensions"
 
-REM Clone the repository - FIXED: changed team-snippets to driver-snippets
+REM Delete old driver-snippets folder if it exists
+if exist "driver-snippets" (
+    echo Removing existing driver-snippets folder...
+    rmdir /s /q "driver-snippets"
+)
+
+REM Clone the repository
 echo Cloning from GitHub...
 git clone https://github.com/gulshanMiantic08/driver-snippets.git
 
