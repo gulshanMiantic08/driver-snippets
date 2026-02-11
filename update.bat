@@ -2,7 +2,7 @@
 echo Updating Team Snippets...
 echo.
 
-cd /d "%USERPROFILE%\.vscode\extensions\team-snippets"
+cd /d "%USERPROFILE%\.vscode\extensions\driver-snippets"
 
 echo Pulling latest changes from GitHub...
 git pull origin main

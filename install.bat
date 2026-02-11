@@ -21,7 +21,7 @@ cd /d "%USERPROFILE%\.vscode\extensions"
 
 REM Clone the repository
 echo Cloning from GitHub...
-git clone https://github.com/gulshanMiantic08/team-snippets.git
+git clone https://github.com/gulshanMiantic08/driver-snippets.git
 
 if %errorlevel% neq 0 (
     echo Failed to clone repository!
