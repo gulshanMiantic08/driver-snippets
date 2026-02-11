@@ -1,6 +1,7 @@
 {
     
     "Python Driver Template": {
+        "scope": "python",
         "prefix": "drivertemplate",
         "body": [
             "from datetime import datetime as dat",
