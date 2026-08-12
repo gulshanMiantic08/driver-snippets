@@ -1,16 +1,21 @@
 {
-  "name": "team-snippets",
-  "displayName": "driver-snippets",
-  "description": "Private snippets for miantic development team",
-  "version": "0.0.1",
-  "publisher": "Miantic Development Team",
-  "icon": "icon.png",
+  "name": "driver-snippets",
+  "displayName": "Driver Snippets",
+  "description": "Private VS Code snippets for Miantic Development Team",
+  "version": "1.0.0",
+  "publisher": "gulshanMiantic08",
   "engines": {
-    "vscode": "^1.109.0"
+    "vscode": "^1.60.0"
   },
   "categories": [
     "Snippets"
   ],
+  "activationEvents": [
+    "onStartupFinished",
+    "onLanguage:python",
+    "onLanguage:javascript"
+  ],
+  "main": "./extension.js",
   "contributes": {
     "snippets": [
       {
@@ -22,11 +27,11 @@
         "path": "./snippets/snippets.json"
       },
       {
-        "language": "typescript",
+        "language": "javascriptreact",
         "path": "./snippets/snippets.json"
       },
       {
-        "language": "javascriptreact",
+        "language": "typescript",
         "path": "./snippets/snippets.json"
       },
       {
@@ -38,6 +43,5 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/gulshanMiantic08/driver-snippets.git"
-  },
-  "private": true
+  }
 }
